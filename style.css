@@ -1,0 +1,144 @@
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+  font-size: 2.0rem;
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  background: #FFFFFF;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+  border-radius: .5rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  width: min(42.8rem, 90%);
+
+  margin-top: -10rem;
+
+  text-align: center;
+}
+
+
+/* screen1 */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1.4rem;
+  color: #34355B;
+}
+
+p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  color: #34355B;
+}
+
+
+#img1:hover {
+  cursor: pointer;
+}
+
+/* screen2 */
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1.7rem;
+  color: #34355B;
+}
+
+.randomPhrase {
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 2.4rem;
+  color: black;
+}
+
+button {
+  background: #FF9500;
+  color: white;
+  font-weight: bold;
+  border-radius: .4rem;
+  cursor: pointer;
+  
+  transition: background .3s;
+  
+  border: none;
+  padding: 1.6rem;
+
+  margin-top: 1.7rem;
+}
+
+button:hover{
+  background-color: #e48500;
+}
+
+.cookiePaper {
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 2.4rem;
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: #E4EDF1;
+  box-shadow: .2rem .2rem .2rem rgba(85, 85, 85, 0.5);
+
+  margin: 0 auto;
+  
+  gap: 1rem;
+
+  animation: appear 1s ease-in-out;
+}
+
+#img2 {
+  margin-top: 1.7rem;
+}
+
+  /* Define a animação "tremor" */
+  @keyframes tremor {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(5deg); }
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(10deg); }
+    80% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  /* Aplica a animação à imagem */
+  #img1:hover {
+    animation-name: tremor;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  /* Define a interação com o mouse */
+  #img1 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  #img1:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes appear {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    80% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
